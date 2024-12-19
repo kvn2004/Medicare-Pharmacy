@@ -1,0 +1,16 @@
+#btnDashboard , #btnItem ,#btnReport #btnNewOrder{
+    fx-background-color: transparent;
+    -fx-border: none;
+    -fx-padding: 8;
+    -fx-cursor: hand;
+}
+
+#btnDashboard:hover, #btnItem:hover, #btnReport:hover, #btnNewOrder:hover {
+    -fx-background-color: #e0e0e0;
+}
+#btnDashboard:pressed, #btnItem:pressed, #btnReport:pressed, #btnNewOrder:pressed{
+    -fx-background-color: #d0d0d0;
+}
+#UpBar{
+    -fx-effect: dropshadow(gaussian, rgb(166, 161, 161), 10, 0.5, 3, -1);
+}

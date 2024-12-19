@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane fx:id="ancAddMedicine" prefHeight="500.0" prefWidth="389.0" style="-fx-background-color: #ecedf6; -fx-background-radius: 5;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.vtl.medicare.medicarepharmacy.Controller.AddItemPopUpController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="349.0" layoutX="48.0" layoutY="42.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" style="-fx-effect: dropshadow(gaussian, rgb(166, 161, 161), 10, 0.2, -3, 1);;" width="293.0" />
+      <Label layoutX="68.0" layoutY="53.0" text="ID">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="82.0" text="Enter Medicine Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="156.0" text="Enter Purchase Price (lkr)">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="233.0" text="Enter Sale Price(lkr)">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="68.0" layoutY="307.0" text="Enter QTY In Stock">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Text fill="#007bff" layoutX="149.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD MEDICINE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblItemId" layoutX="109.0" layoutY="54.0" text="M001" />
+      <TextField fx:id="txtItemName" alignment="TOP_CENTER" layoutX="65.0" layoutY="112.0" prefHeight="27.0" prefWidth="258.0" style="-fx-background-color: #ffffff; -fx-background-radius: 0; -fx-border-color: #e6e6e6;" />
+      <TextField fx:id="txtitemPurchasePrice" alignment="TOP_CENTER" layoutX="65.0" layoutY="187.0" prefHeight="27.0" prefWidth="258.0" style="-fx-background-color: #ffffff; -fx-background-radius: 0; -fx-border-color: #e6e6e6;" />
+      <TextField fx:id="txtItemsalePrice" alignment="TOP_CENTER" layoutX="65.0" layoutY="259.0" prefHeight="27.0" prefWidth="258.0" style="-fx-background-color: #ffffff; -fx-background-radius: 0; -fx-border-color: #e6e6e6;" />
+      <TextField fx:id="txtItemqty" alignment="TOP_CENTER" layoutX="65.0" layoutY="338.0" prefHeight="27.0" prefWidth="258.0" style="-fx-background-color: #ffffff; -fx-background-radius: 0; -fx-border-color: #e6e6e6;" />
+      <JFXButton fx:id="btnAddItem" buttonType="RAISED" layoutX="31.0" layoutY="427.0" onAction="#btnAddItemOnAction" prefHeight="36.0" prefWidth="328.0" style="-fx-background-radius: 3; -fx-background-color: #007BFF;" text="Submit" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Leelawadee UI Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/icons8-correct-24.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>
