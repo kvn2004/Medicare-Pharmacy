@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="479.0" prefWidth="723.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.vtl.medicare.medicarepharmacy.Controller.logingController">
+   <children>
+      <ImageView fitHeight="479.0" fitWidth="779.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/freepik__upload__63487.jpeg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="ancLog" layoutX="182.0" layoutY="30.0" prefHeight="418.0" prefWidth="368.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30;" stylesheets="@../Css/LogingPg.css">
+         <children>
+            <Text fill="#1e272e" layoutX="92.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MEDICARE">
+               <font>
+                  <Font name="Poppins Bold" size="36.0" />
+               </font>
+            </Text>
+            <Text fill="#1e272e" layoutX="134.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PHARMACY">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="34.0" layoutY="212.0">
+               <image>
+                  <Image url="@../Assets/icons8-user-30.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="33.0" layoutY="289.0">
+               <image>
+                  <Image url="@../Assets/icons8-key-30.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnLoging" buttonType="RAISED" layoutX="96.0" layoutY="357.0" onAction="#btnLogingOnAction" prefHeight="27.0" prefWidth="176.0" style="-fx-background-color: #1e272e; -fx-background-radius: 15;" text="Loging" textFill="#e8ecec">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.4774268865585327" green="0.7294191122055054" blue="0.821052610874176" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+            </JFXButton>
+            <ImageView layoutX="155.0" layoutY="115.0">
+               <image>
+                  <Image url="@../Assets/icons8-user-account-50.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtUsername" layoutX="73.0" layoutY="209.0" prefHeight="26.0" prefWidth="262.0" promptText="Username" />
+            <PasswordField fx:id="txtPwd" layoutX="73.0" layoutY="288.0" prefHeight="26.0" prefWidth="262.0" promptText="Password" />
+            <TextField fx:id="pwdtextfield" layoutX="73.0" layoutY="288.0" prefHeight="26.0" prefWidth="262.0" />
+            <ImageView fx:id="imgshowPwd" fitHeight="15.0" fitWidth="15.0" layoutX="309.0" layoutY="294.0" onMousePressed="#imgshowPwdonMousePressed" onMouseReleased="#imgshowPwdonMouseRelesed" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/icons8-eye-48.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Text fill="#313233" layoutX="308.0" layoutY="468.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" © VTL Solution v1.0.0">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
