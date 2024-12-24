@@ -65,13 +65,13 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="txtQty1" alignment="TOP_CENTER" layoutX="151.0" layoutY="23.0" prefHeight="26.0" prefWidth="242.0" />
+            <TextField fx:id="txtCustomerName" alignment="TOP_CENTER" layoutX="151.0" layoutY="23.0" prefHeight="26.0" prefWidth="242.0" />
             <Label layoutX="527.0" layoutY="26.0" text="Order Date">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <Label layoutX="618.0" layoutY="26.0" text="Label">
+            <Label fx:id="lblOrderDate" layoutX="618.0" layoutY="26.0" text="Label">
                <font>
                   <Font size="14.0" />
                </font>
@@ -92,13 +92,13 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="txtQty2" alignment="TOP_CENTER" layoutX="68.0" layoutY="104.0" prefHeight="26.0" prefWidth="90.0" />
+            <TextField fx:id="txtCash" alignment="TOP_CENTER" layoutX="68.0" layoutY="104.0" prefHeight="26.0" prefWidth="90.0" />
             <Label layoutX="23.0" layoutY="148.0" text="Balance">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <Label layoutX="87.0" layoutY="148.0" text="Label">
+            <Label fx:id="lblBalance" layoutX="87.0" layoutY="148.0" text="Label">
                <font>
                   <Font size="14.0" />
                </font>
@@ -122,7 +122,7 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <Label layoutX="65.0" layoutY="20.0" text="Label">
+            <Label fx:id="lblTotal" layoutX="65.0" layoutY="20.0" text="Label">
                <font>
                   <Font size="14.0" />
                </font>
@@ -136,7 +136,7 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="txtQty11" alignment="TOP_CENTER" layoutX="86.0" layoutY="17.0" prefHeight="26.0" prefWidth="74.0" />
+            <TextField fx:id="txtDiscount" alignment="TOP_CENTER" layoutX="86.0" layoutY="17.0" prefHeight="26.0" prefWidth="74.0" />
             <Label layoutX="164.0" layoutY="20.0" text="\%">
                <font>
                   <Font name="System Bold" size="14.0" />
@@ -151,7 +151,7 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <Label layoutX="93.0" layoutY="20.0" text="Label">
+            <Label fx:id="lblSubTotal" layoutX="93.0" layoutY="20.0" text="Label">
                <font>
                   <Font size="14.0" />
                </font>
@@ -165,19 +165,19 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <Label layoutX="104.0" layoutY="20.0" text="Label">
+            <Label fx:id="lblItemCount" layoutX="104.0" layoutY="20.0" text="Label">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
          </children>
       </AnchorPane>
-      <JFXButton fx:id="btnPlaceOrder" buttonType="RAISED" layoutX="825.0" layoutY="486.0" onAction="#btnAddItemOnAction" prefHeight="60.0" prefWidth="222.0" style="-fx-background-radius: 3; -fx-background-color: #007BFF;" text="Place Order" textAlignment="CENTER" textFill="WHITE">
+      <JFXButton fx:id="" buttonType="RAISED" layoutX="825.0" layoutY="486.0" onAction="#btnAddItemOnAction" prefHeight="60.0" prefWidth="222.0" style="-fx-background-radius: 3; -fx-background-color: #007BFF;" text="Place Order" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="Leelawadee UI Bold" size="14.0" />
          </font>
          <graphic>
-            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="" fitHeight="30.0" fitWidth="30.0" onKeyPressed="#btnPlaceOrderOnKeyPressed" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Assets/icons8-check-30.png" />
                </image>
@@ -189,7 +189,7 @@
             <Image url="@../Assets/icons8-add-30.png" />
          </image>
       </ImageView>
-      <JFXButton fx:id="btnDeleteItem" buttonType="RAISED" layoutX="826.0" layoutY="556.0" onAction="#btnDeleteItemOnAction" prefHeight="60.0" prefWidth="222.0" style="-fx-background-radius: 3; -fx-background-color: #FF0033;" text="Cancel Order" textAlignment="CENTER" textFill="WHITE">
+      <JFXButton fx:id="btnCancelOrder" buttonType="RAISED" layoutX="826.0" layoutY="556.0" onAction="#btnDeleteItemOnAction" onKeyPressed="#btnCancelOrderOnKeyPressed" prefHeight="60.0" prefWidth="222.0" style="-fx-background-radius: 3; -fx-background-color: #FF0033;" text="Cancel Order" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="Leelawadee UI Bold" size="14.0" />
          </font>

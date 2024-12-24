@@ -12,14 +12,14 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="479.0" prefWidth="723.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.vtl.medicare.medicarepharmacy.Controller.logingController">
+<AnchorPane prefHeight="479.0" prefWidth="723.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.vtl.medicare.medicarepharmacy.Controller.logingController">
    <children>
-      <ImageView fitHeight="479.0" fitWidth="779.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="479.0" fitWidth="779.0" layoutX="47.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../Assets/freepik__upload__63487.jpeg" />
+            <Image url="@../Assets/Blue%20and%20White%20Abstract%20Geometric%20Blank%20Page%20A4%20Landscape.png" />
          </image>
       </ImageView>
-      <AnchorPane fx:id="ancLog" layoutX="182.0" layoutY="30.0" prefHeight="418.0" prefWidth="368.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30;" stylesheets="@../Css/LogingPg.css">
+      <AnchorPane fx:id="ancLog" layoutX="351.0" layoutY="10.0" prefHeight="400.0" prefWidth="334.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30;" stylesheets="@../Css/LogingPg.css">
          <children>
             <Text fill="#1e272e" layoutX="92.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MEDICARE">
                <font>
@@ -31,17 +31,17 @@
                   <Font name="System Bold" size="18.0" />
                </font>
             </Text>
-            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="34.0" layoutY="212.0">
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="213.0">
                <image>
                   <Image url="@../Assets/icons8-user-30.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="33.0" layoutY="289.0">
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="289.0">
                <image>
                   <Image url="@../Assets/icons8-key-30.png" />
                </image>
             </ImageView>
-            <JFXButton fx:id="btnLoging" buttonType="RAISED" layoutX="96.0" layoutY="357.0" onAction="#btnLogingOnAction" prefHeight="27.0" prefWidth="176.0" style="-fx-background-color: #1e272e; -fx-background-radius: 15;" text="Loging" textFill="#e8ecec">
+            <JFXButton fx:id="btnLoging" buttonType="RAISED" layoutX="79.0" layoutY="358.0" onAction="#btnLogingOnAction" prefHeight="27.0" prefWidth="176.0" style="-fx-background-color: #1e272e; -fx-background-radius: 15;" text="Loging" textFill="#e8ecec">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
@@ -67,10 +67,10 @@
                   <Image url="@../Assets/icons8-user-account-50.png" />
                </image>
             </ImageView>
-            <TextField fx:id="txtUsername" layoutX="73.0" layoutY="209.0" prefHeight="26.0" prefWidth="262.0" promptText="Username" />
-            <PasswordField fx:id="txtPwd" layoutX="73.0" layoutY="288.0" prefHeight="26.0" prefWidth="262.0" promptText="Password" />
-            <TextField fx:id="pwdtextfield" layoutX="73.0" layoutY="288.0" prefHeight="26.0" prefWidth="262.0" />
-            <ImageView fx:id="imgshowPwd" fitHeight="15.0" fitWidth="15.0" layoutX="309.0" layoutY="294.0" onMousePressed="#imgshowPwdonMousePressed" onMouseReleased="#imgshowPwdonMouseRelesed" pickOnBounds="true" preserveRatio="true">
+            <TextField fx:id="txtUsername" layoutX="53.0" layoutY="210.0" prefHeight="26.0" prefWidth="262.0" promptText="Username" />
+            <PasswordField fx:id="txtPwd" layoutX="54.0" layoutY="288.0" prefHeight="26.0" prefWidth="262.0" promptText="Password" />
+            <TextField fx:id="pwdtextfield" layoutX="54.0" layoutY="288.0" prefHeight="26.0" prefWidth="262.0" />
+            <ImageView fx:id="imgshowPwd" fitHeight="15.0" fitWidth="15.0" layoutX="290.0" layoutY="294.0" onMousePressed="#imgshowPwdonMousePressed" onMouseReleased="#imgshowPwdonMouseRelesed" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Assets/icons8-eye-48.png" />
                </image>

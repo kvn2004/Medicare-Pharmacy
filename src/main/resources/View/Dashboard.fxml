@@ -141,6 +141,11 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
+            <ImageView fx:id="imglogout" fitHeight="35.0" fitWidth="35.0" layoutX="990.0" layoutY="24.0" onMouseClicked="#imglogoutOnClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/icons8-logout.gif" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
    </children>

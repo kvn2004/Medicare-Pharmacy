@@ -7,10 +7,14 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.shape.Rectangle;
+import javafx.stage.Stage;
 import javafx.util.Duration;
 
 import java.io.IOException;
@@ -23,6 +27,8 @@ import java.util.ResourceBundle;
 
 public class DashboardController implements Initializable {
     @FXML
+    private ImageView imglogout;
+    @FXML
     private Rectangle UpBar;
     private DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd | HH:mm:ss");
 
@@ -33,6 +39,14 @@ public class DashboardController implements Initializable {
         timeline.play(); // Start the timeline
         lblInterfaceName.setText(btnDashboard.getText());
         imgInterfaceImage.setImage(imgDashboard.getImage());
+        ancinterfaces.getChildren().clear();
+        AnchorPane anchorPane = null;
+        try {
+            anchorPane = FXMLLoader.load(getClass().getResource("/View/DashboardPanel.fxml"));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        ancinterfaces.getChildren().add(anchorPane);
     }
 
     private void updateTime() {
@@ -78,9 +92,12 @@ public class DashboardController implements Initializable {
     private Label lblUserName;
 
     @FXML
-    void btnDashboardOnAction(ActionEvent event) {
+    void btnDashboardOnAction(ActionEvent event) throws IOException {
         lblInterfaceName.setText(btnDashboard.getText());
         imgInterfaceImage.setImage(imgDashboard.getImage());
+        ancinterfaces.getChildren().clear();
+        AnchorPane anchorPane = FXMLLoader.load(getClass().getResource("/View/DashboardPanel.fxml"));
+        ancinterfaces.getChildren().add(anchorPane);
 
     }
 
@@ -108,4 +125,15 @@ public class DashboardController implements Initializable {
         ancinterfaces.getChildren().add(anchorPane);
     }
 
+    public void imglogoutOnClicked(MouseEvent mouseEvent) throws IOException {
+        Parent load = FXMLLoader.load(getClass().getResource("/View/loging.fxml"));
+        Scene scene = new Scene(load);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.show();
+        stage.setTitle("Medicare Pharmacy");
+        stage.setResizable(false);
+        Stage window = (Stage) btnNewOrder.getScene().getWindow();
+        window.close();
+    }
 }

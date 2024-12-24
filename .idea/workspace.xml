@@ -4,19 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9df331f-3c7f-405a-bb8f-60f599f00881" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/View/loging.fxml" afterDir="false" />
+    <list default="true" id="e9df331f-3c7f-405a-bb8f-60f599f00881" name="Changes" comment="Ui 50%">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/vtl/medicare/medicarepharmacy/Controller/AddItemPopUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/vtl/medicare/medicarepharmacy/Controller/AddItemPopUpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/vtl/medicare/medicarepharmacy/Controller/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/vtl/medicare/medicarepharmacy/Controller/DashboardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/vtl/medicare/medicarepharmacy/Controller/ItemPanelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/vtl/medicare/medicarepharmacy/Controller/ItemPanelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/vtl/medicare/medicarepharmacy/Controller/NewOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/vtl/medicare/medicarepharmacy/Controller/NewOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/View/Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/View/Dashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/View/NewOrderPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/View/NewOrderPanel.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/View/ReportPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/View/ReportPanel.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/View/loging.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/View/loging.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +41,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -58,9 +60,9 @@
     &quot;Application.AppInit.executor&quot;: &quot;Run&quot;,
     &quot;Application.AppInitializer.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/JAVA/MedicarePharmacy/src/main/resources/Assets&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/JAVA/MedicarePharmacy/src/main/java/lk/vtl/medicare/medicarepharmacy&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -71,10 +73,16 @@
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\JAVA\MedicarePharmacy\src\main\java\lk\vtl\medicare\medicarepharmacy" />
       <recent name="E:\JAVA\MedicarePharmacy\src\main\resources\Assets" />
     </key>
   </component>
@@ -124,10 +132,38 @@
       <workItem from="1734612760860" duration="127000" />
       <workItem from="1734612926888" duration="2000" />
       <workItem from="1734613054920" duration="29000" />
+      <workItem from="1734614219236" duration="420000" />
+      <workItem from="1734615591201" duration="33000" />
+      <workItem from="1734615961231" duration="2888000" />
+      <workItem from="1734620875433" duration="612000" />
+      <workItem from="1734627953545" duration="395000" />
+      <workItem from="1734630999891" duration="195000" />
+      <workItem from="1734631208912" duration="730000" />
+      <workItem from="1734656123906" duration="97000" />
+      <workItem from="1734670848695" duration="670000" />
+      <workItem from="1734870908791" duration="1797000" />
+      <workItem from="1734913142413" duration="3415000" />
+      <workItem from="1734925651116" duration="2477000" />
+      <workItem from="1734933538340" duration="1432000" />
+      <workItem from="1734999456505" duration="698000" />
+      <workItem from="1735000188673" duration="252000" />
     </task>
+    <task id="LOCAL-00001" summary="Ui 50%">
+      <option name="closed" value="true" />
+      <created>1734613470189</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1734613470189</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Ui 50%" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ui 50%" />
   </component>
 </project>

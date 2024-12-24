@@ -8,14 +8,15 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyEvent;
 
 public class NewOrderController {
 
     @FXML
-    private JFXButton btnDeleteItem;
+    private JFXButton btnCancelOrder;
 
     @FXML
-    private JFXButton btnPlaceOrder;
+    private ImageView btnPlaceOrder;
 
     @FXML
     private JFXComboBox<?> cbSearchMedicine;
@@ -30,19 +31,34 @@ public class NewOrderController {
     private ImageView imgPaymentOption;
 
     @FXML
+    private Label lblBalance;
+
+    @FXML
+    private Label lblItemCount;
+
+    @FXML
+    private Label lblOrderDate;
+
+    @FXML
+    private Label lblSubTotal;
+
+    @FXML
+    private Label lblTotal;
+
+    @FXML
     private JFXToggleButton tgCard;
 
     @FXML
+    private TextField txtCash;
+
+    @FXML
+    private TextField txtCustomerName;
+
+    @FXML
+    private TextField txtDiscount;
+
+    @FXML
     private TextField txtQty;
-
-    @FXML
-    private TextField txtQty1;
-
-    @FXML
-    private TextField txtQty11;
-
-    @FXML
-    private TextField txtQty2;
 
     @FXML
     void btnAddItemOnAction(ActionEvent event) {
@@ -50,7 +66,17 @@ public class NewOrderController {
     }
 
     @FXML
+    void btnCancelOrderOnKeyPressed(KeyEvent event) {
+
+    }
+
+    @FXML
     void btnDeleteItemOnAction(ActionEvent event) {
+
+    }
+
+    @FXML
+    void btnPlaceOrderOnKeyPressed(KeyEvent event) {
 
     }
 

@@ -1,14 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="lk.vtl.medicare.medicarepharmacy.Controller.ReportPanelControler"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="640.0" prefWidth="1046.0" style="-fx-background-color: #ecedf6;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.vtl.medicare.medicarepharmacy.Controller.ReportPanelControler">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="54.0" prefWidth="1046.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <JFXButton fx:id="btnAddItem" buttonType="RAISED" layoutX="6.0" layoutY="7.0" onAction="#btnAddItemOnAction" prefHeight="36.0" prefWidth="130.0" style="-fx-background-radius: 3; -fx-background-color: #007BFF;" text="Item" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/icons8-add-30.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnAddItem1" buttonType="RAISED" layoutX="147.0" layoutY="7.0" onAction="#btnAddItemOnAction" prefHeight="36.0" prefWidth="130.0" style="-fx-background-radius: 3; -fx-background-color: #007BFF;" text="Income" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/icons8-add-30.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnAddItem11" buttonType="RAISED" layoutX="288.0" layoutY="7.0" onAction="#btnAddItemOnAction" prefHeight="36.0" prefWidth="130.0" style="-fx-background-radius: 3; -fx-background-color: #007BFF;" text="orders" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Leelawadee UI Bold" size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Assets/icons8-add-30.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
 </AnchorPane>
