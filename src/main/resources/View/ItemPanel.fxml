@@ -37,7 +37,7 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <TableView fx:id="TblItem" layoutY="329.0" onMouseClicked="#tblItemMouseClicked" prefHeight="312.0" prefWidth="1046.0">
+      <TableView fx:id="TblItem" editable="true" layoutY="329.0" onMouseClicked="#tblItemMouseClicked" prefHeight="312.0" prefWidth="1046.0">
         <columns>
           <TableColumn fx:id="cItemID" prefWidth="168.79998475313187" text="Item ID" />
           <TableColumn fx:id="cItemName" prefWidth="160.80003356933594" text="Item Name" />

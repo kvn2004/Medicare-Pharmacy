@@ -6,6 +6,7 @@ module lk.vtl.medicare.medicarepharmacy {
     requires static lombok;
 
 
+    opens lk.vtl.medicare.medicarepharmacy.DTO.TM to javafx.base;
     opens lk.vtl.medicare.medicarepharmacy.Controller to javafx.fxml;
     exports lk.vtl.medicare.medicarepharmacy;
 }

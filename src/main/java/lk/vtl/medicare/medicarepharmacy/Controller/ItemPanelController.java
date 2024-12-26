@@ -47,21 +47,22 @@ public class ItemPanelController implements Initializable {
             e.printStackTrace();
         }
     }
+
     public void loadTblItem() throws SQLException, ClassNotFoundException {
         ArrayList<ItemTM> itemTMS = ItemModel.getAllMedicine();
         ObservableList<ItemTM> objects = FXCollections.observableArrayList();
         for (ItemTM item : itemTMS) {
-            objects.add(new ItemTM(
+            ItemTM itemTM = new ItemTM(
                     item.getItemId(),
                     item.getItemName(),
                     item.getGetPrice(),
                     item.getSalePrice(),
                     item.getQty(),
                     item.getDateTime()
-            ));
+            );
+            objects.add(itemTM);
         }
         TblItem.setItems(objects);
-
 
     }
 
@@ -78,12 +79,12 @@ public class ItemPanelController implements Initializable {
     private JFXButton btnUpdate;
 
     @FXML
-    private TableColumn<ItemTM,String> cItemID;
+    private TableColumn<ItemTM, String> cItemID;
 
     @FXML
     private TableColumn<ItemTM, String> cItemName;
 
-   @FXML
+    @FXML
     private TableColumn<ItemTM, String> cDateTime;
 
     @FXML
@@ -93,7 +94,7 @@ public class ItemPanelController implements Initializable {
     private TableColumn<ItemTM, Integer> cQty;
 
     @FXML
-    private TableColumn<ItemTM,Float> cSalePrice;
+    private TableColumn<ItemTM, Float> cSalePrice;
 
     @FXML
     private JFXComboBox<?> cbSearchItem;

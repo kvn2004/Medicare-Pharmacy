@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9df331f-3c7f-405a-bb8f-60f599f00881" name="Changes" comment="Ui 50%">
+    <list default="true" id="e9df331f-3c7f-405a-bb8f-60f599f00881" name="Changes" comment="Bug with item Table">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/vtl/medicare/medicarepharmacy/Controller/AddItemPopUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/vtl/medicare/medicarepharmacy/Controller/AddItemPopUpController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/vtl/medicare/medicarepharmacy/Controller/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/vtl/medicare/medicarepharmacy/Controller/DashboardController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lk/vtl/medicare/medicarepharmacy/Controller/ItemPanelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/vtl/medicare/medicarepharmacy/Controller/ItemPanelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/vtl/medicare/medicarepharmacy/Controller/NewOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/vtl/medicare/medicarepharmacy/Controller/NewOrderController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/View/Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/View/Dashboard.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/View/NewOrderPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/View/NewOrderPanel.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/View/ReportPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/View/ReportPanel.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/View/loging.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/View/loging.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/View/ItemPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/View/ItemPanel.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +139,10 @@
       <workItem from="1734925651116" duration="2477000" />
       <workItem from="1734933538340" duration="1432000" />
       <workItem from="1734999456505" duration="698000" />
-      <workItem from="1735000188673" duration="252000" />
+      <workItem from="1735000188673" duration="469000" />
+      <workItem from="1735048825156" duration="939000" />
+      <workItem from="1735206205610" duration="429000" />
+      <workItem from="1735206665554" duration="833000" />
     </task>
     <task id="LOCAL-00001" summary="Ui 50%">
       <option name="closed" value="true" />
@@ -156,7 +152,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734613470189</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Bug with item Table">
+      <option name="closed" value="true" />
+      <created>1735000627897</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1735000627897</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,6 +168,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Ui 50%" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ui 50%" />
+    <MESSAGE value="Bug with item Table" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug with item Table" />
   </component>
 </project>
